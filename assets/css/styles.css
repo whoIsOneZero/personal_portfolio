@@ -103,11 +103,11 @@ img {
 }
 
 .section {
-  background-color: #fffbea;
+  background-color: #f0eee9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
-  margin: 20px 20px;
+  margin: 0px 20px;
 }
 
 /*===== LAYOUT =====*/
@@ -357,6 +357,7 @@ img {
   outline: none;
   margin-bottom: var(--mb-4);
 }
+
 .contact__button {
   display: block;
   border: none;
@@ -422,6 +423,7 @@ img {
     align-items: center;
     text-align: initial;
   }
+  
   .skills__container {
     grid-template-columns: 0.7fr;
     justify-content: center;
