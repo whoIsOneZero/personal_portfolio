@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
 
+    <script
+      src="https://kit.fontawesome.com/f39dd2e03b.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Portfolio website complete</title>
   </head>
   <body>
@@ -19,7 +24,7 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo">~/</a>
+          <a href="#" class="nav__dir">~/</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -66,12 +71,14 @@
             class="home__social-icon"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="" class="home__social-icon"
-            ><i class="bx bxl-behance"></i
-          ></a>
           <a href="https://github.com/whoisonezero" class="home__social-icon"
             ><i class="bx bxl-github"></i
           ></a>
+          <a href="https://x.com/this_shalom" class="home__social-icon"
+            ><i class="fa-solid fa-x"></i
+                ></i
+          ></a>
+          
         </div>
 
         <div class="home__img">
@@ -111,12 +118,15 @@
           </div>
 
           <div>
-            <h2 class="about__subtitle">I'am Marlon</h2>
+            <h2 class="about__subtitle">Shallom Ezekiel</h2>
             <p class="about__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
-              ut voluptates soluta, aut earum nemo recusandae cumque
-              perferendis! Recusandae alias accusamus atque.
+                I am a recent graduate with a Bachelor of Science in
+                Telecommunication Engineering, focusing on Machine Learning,
+                Cybersecurity, and Wireless Communication. I have a proven track
+                record in building innovative solutions to real-world problems.
+                With a strong foundation in Python, cybersecurity, and software
+                development, I aim to contribute to impactful projects that
+                combine technology and innovation.
             </p>
           </div>
         </div>
@@ -213,35 +223,30 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+          <form name="submit-to-google-sheet" class="contact__form">
+            <input type="text" name="Name" placeholder="Name" class="contact__input" />
+            <input type="email" name="Email" placeholder="Email" class="contact__input" />
             <textarea
-              name=""
+              name="Message"
               id=""
-              cols="0"
-              rows="10"
+              placeholder="Your message"
+              rows="6"
               class="contact__input"
             ></textarea>
             <input
-              type="button"
-              value="Enviar"
+              type="submit"
+              value="Send"
               class="contact__button button"
             />
           </form>
+          <p id="msg" style="color: green; margin-top: 10px;"></p>
         </div>
       </section>
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-      <p class="footer__title">Marlon</p>
-      <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
-      </div>
-      <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+      <p class="footer__copy">&#169; Shallom Ezekiel. All rigths reserved</p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
@@ -249,5 +254,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/submit_contact_form.js"></script>
   </body>
 </html>
