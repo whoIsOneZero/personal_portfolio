@@ -141,7 +141,7 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 40%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
@@ -195,8 +195,9 @@ img {
 /*===== HOME =====*/
 .home {
   position: relative;
-  row-gap: 5rem;
+  /* row-gap: 5rem; */
   padding: 4rem 0 5rem;
+  height: 100vh;
 }
 
 .home__data {
@@ -423,7 +424,7 @@ img {
     align-items: center;
     text-align: initial;
   }
-  
+
   .skills__container {
     grid-template-columns: 0.7fr;
     justify-content: center;
@@ -442,6 +443,7 @@ img {
     justify-items: center;
   }
 }
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -498,6 +500,7 @@ img {
     column-gap: 2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .bd-grid {
     margin-left: auto;

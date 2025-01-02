@@ -23,7 +23,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
-const navDir = document.querySelector(".nav__dir");
+// const navDir = document.querySelector(".nav__dir");
 
 const scrollActive = () => {
   const scrollDown = window.scrollY;
@@ -38,7 +38,7 @@ const scrollActive = () => {
 
     if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
       sectionsClass.classList.add("active-link");
-      navDir.textContent = `~/${sectionId}`;
+      // navDir.textContent = `~/${sectionId}`;
     } else {
       sectionsClass.classList.remove("active-link");
     }
