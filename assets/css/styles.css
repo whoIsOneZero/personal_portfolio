@@ -328,6 +328,7 @@ img {
   width: 85%;
 }
 
+/* NEW */
 .skill-section {
   padding: 20px 30px;
 }
@@ -358,6 +359,7 @@ img {
   height: 64px;
   object-fit: contain;
 }
+
 .skill-section .skillset {
   padding: 20px 0;
 }
