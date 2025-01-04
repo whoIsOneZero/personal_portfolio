@@ -10,8 +10,7 @@
   --hue-color: 224;
   --clcolor: #0d1730;
   /* --hue-color: 12; */
-  --first-color: #06a2c6;
-  /* hsl(var(--hue-color), 89%, 60%); */
+  --first-color: #06a2c6; /* hsl(var(--hue-color), 89%, 60%); */
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Font & Typography =====*/
   --body-font: "Poppins", sans-serif;
@@ -100,14 +99,15 @@ img {
   background-color: var(--first-color);
 }
 .section {
-  background-color: rgba(100, 225, 241, 0.255);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.858);
+  /* Original color: rgba(100, 225, 241, 0.255); */
   padding: 20px;
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
 .section:nth-child(2) {
-  background-color: #f2f9ff;
+  background-color: rgba(100, 225, 241, 0.255);
+  /* Original b-color: #f2f9ff; */
 }
 .section:nth-child(4) {
   background-color: white;
@@ -374,7 +374,8 @@ img {
 } */
 
 .skill-section .skill-brief .description {
-  color: #000000;
+  color: whitesmoke;
+  /* Original color: #000000; */
   text-align: center;
 }
 
@@ -395,7 +396,8 @@ img {
 .skill-section .skillset .skill-description .heading {
   font-size: 15px;
   /* font-weight: 600; */
-  color: rgb(0, 0, 0);
+  color: whitesmoke;
+  /* Original color: #000000; */
 }
 
 /* .skills__img {
