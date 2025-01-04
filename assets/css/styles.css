@@ -8,16 +8,18 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
+  --clcolor: #0d1730;
   /* --hue-color: 12; */
-  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --first-color: #06a2c6;
+  /* hsl(var(--hue-color), 89%, 60%); */
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+  /*===== Font & Typography =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
   --smaller-font-size: 0.75rem;
-  /*===== Margenes =====*/
+  /*===== Margins =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
@@ -34,7 +36,6 @@
     --smaller-font-size: 0.875rem;
   }
 }
-
 /*===== BASE =====*/
 *,
 ::before,
@@ -79,42 +80,38 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: var(--clcolor);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: left;
-  /* text-align: center; */
   padding-left: 10px;
 }
 
 .section-title::after {
+  display: block;
   position: absolute;
   content: "";
-  width: 64px;
-  height: 0.18rem;
-  left: 10px;
-  /* right: 0; */
-  margin: auto;
+  width: 67px;
+  height: 0.19rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
   top: 2rem;
   background-color: var(--first-color);
 }
-
 .section {
+  background-color: rgba(100, 225, 241, 0.255);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
-
-.section {
-  background-color: #fffcfc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  margin: 0px 20px;
+.section:nth-child(2) {
+  background-color: #f2f9ff;
 }
-
-/* .section-2 {
+.section:nth-child(4) {
   background-color: white;
-} */
+}
 
 /*===== LAYOUT =====*/
 .bd-grid {
@@ -122,6 +119,11 @@ img {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+}
+.bd-grid_skills {
+  max-width: 1024px;
+  display: grid;
+  margin: auto;
 }
 
 .l-header {
@@ -392,7 +394,7 @@ img {
 }
 .skill-section .skillset .skill-description .heading {
   font-size: 15px;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: rgb(0, 0, 0);
 }
 
@@ -418,17 +420,19 @@ img {
 
 /* ===== CONTACT =====*/
 .contact__input {
+  color: var(--clcolor);
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid rgb(71, 70, 70);
   outline: none;
   margin-bottom: var(--mb-4);
 }
 
 .contact__button {
+  background-color: var(--clcolor);
   display: block;
   border: none;
   outline: none;
@@ -525,7 +529,7 @@ img {
     margin-bottom: var(--mb-6);
   }
   .section-title::after {
-    width: 80px;
+    /* width: 80px; */
     top: 3rem;
   }
   .nav {
