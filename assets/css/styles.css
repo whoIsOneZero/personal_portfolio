@@ -8,18 +8,19 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
+  --clcolor: #0d1730;
   /* --hue-color: 12; */
-  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --first-color: #06a2c6; /* hsl(var(--hue-color), 89%, 60%); */
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+  /*===== Font & Typography =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
   --smaller-font-size: 0.75rem;
-  /*===== Margenes =====*/
-  --mb-2: 1rem;
-  --mb-4: 2rem;
+  /*===== Margins =====*/
+  --mb-2: 0.8rem;
+  --mb-4: 1.5rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
   /*===== z index =====*/
@@ -34,7 +35,6 @@
     --smaller-font-size: 0.875rem;
   }
 }
-
 /*===== BASE =====*/
 *,
 ::before,
@@ -79,42 +79,40 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: var(--clcolor);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: left;
-  /* text-align: center; */
   padding-left: 10px;
 }
 
 .section-title::after {
+  display: block;
   position: absolute;
   content: "";
-  width: 64px;
-  height: 0.18rem;
-  left: 10px;
-  /* right: 0; */
-  margin: auto;
+  width: 67px;
+  height: 0.19rem;
+  left: 50.2%;
+  transform: translateX(-50%);
+  border-radius: 8px;
   top: 2rem;
   background-color: var(--first-color);
 }
-
 .section {
-  padding-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.858);
+  /* Original color: rgba(100, 225, 241, 0.255); */
+  /* padding: 20px; */
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
+.section:nth-child(2) {
+  background-color: rgba(100, 225, 241, 0.255);
 
-.section {
-  background-color: #fffcfc;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  margin: 0px 20px;
+  /* Original b-color: #f2f9ff; */
 }
-
-/* .section-2 {
+.section:nth-child(4) {
   background-color: white;
-} */
+}
 
 /*===== LAYOUT =====*/
 .bd-grid {
@@ -122,6 +120,11 @@ img {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+}
+.bd-grid_skills {
+  max-width: 1024px;
+  display: grid;
+  margin: auto;
 }
 
 .l-header {
@@ -230,22 +233,24 @@ img {
 
 .home__social-icon {
   width: max-content;
-  margin-bottom: var(--mb-2);
+
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: white;
 
   /*Circle behind the icons*/
   width: 50px;
   height: 50px;
-  background-color: #f0f0f0;
+  background-color: var(--first-color);
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: var(--clcolor);
+  background-color: whitesmoke;
 }
 
 .home__img {
@@ -285,10 +290,22 @@ img {
 }
 .about__img {
   justify-self: center;
+  position: relative;
 }
 .about__img img {
-  width: 200px;
+  width: 300px;
   border-radius: 0.5rem;
+}
+.about__img:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 60px;
+  transform: translate(-15px, -15px);
+  border-radius: 0.5rem;
+  background-color: var(--first-color);
+  z-index: -2;
 }
 
 /* ===== SKILLS =====*/
@@ -372,7 +389,8 @@ img {
 } */
 
 .skill-section .skill-brief .description {
-  color: #000000;
+  color: whitesmoke;
+  /* Original color: #000000; */
   text-align: center;
 }
 
@@ -392,8 +410,9 @@ img {
 }
 .skill-section .skillset .skill-description .heading {
   font-size: 15px;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
+  /* font-weight: 600; */
+  color: whitesmoke;
+  /* Original color: #000000; */
 }
 
 /* .skills__img {
@@ -403,6 +422,7 @@ img {
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
+  padding-bottom: 20px;
 }
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -418,17 +438,19 @@ img {
 
 /* ===== CONTACT =====*/
 .contact__input {
+  color: var(--clcolor);
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid rgb(71, 70, 70);
   outline: none;
   margin-bottom: var(--mb-4);
 }
 
 .contact__button {
+  background-color: var(--clcolor);
   display: block;
   border: none;
   outline: none;
@@ -518,14 +540,14 @@ img {
     margin: 0;
   }
   .section {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.5rem;
   }
   .section-title {
     margin-bottom: var(--mb-6);
   }
   .section-title::after {
-    width: 80px;
+    /* width: 80px; */
     top: 3rem;
   }
   .nav {
@@ -554,6 +576,7 @@ img {
   }
   .about__container {
     padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .about__img img {
     width: 300px;
