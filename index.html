@@ -337,48 +337,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="skillset row pt-5 pb-3">
-          <h2 class="tools_heading">
-            <span class="colored-pipe">|</span> Cybersecurity
-          </h2>
-
-          <div class="col-sm-3 d-flex flex-column align-items-center">
-            <div class="skill-image">
-              <img src="assets/img/skills/nessus.png" alt="" />
-            </div>
-            <div class="skill-description">
-              <p class="heading text-center">Nessus</p>
-            </div>
-          </div>
-
-          <div class="col-sm-3 d-flex flex-column align-items-center">
-            <div class="skill-image">
-              <img src="assets/img/skills/burp_suite.png" alt="" />
-            </div>
-            <div class="skill-description">
-              <p class="heading text-center">Burp Suite</p>
-            </div>
-          </div>
-
-          <div class="col-sm-3 d-flex flex-column align-items-center">
-            <div class="skill-image">
-              <img src="assets/img/skills/wireshark.png" alt="" />
-            </div>
-            <div class="skill-description">
-              <p class="heading text-center">Wireshark</p>
-            </div>
-          </div>
-
-          <div class="col-sm-3 d-flex flex-column align-items-center">
-            <div class="skill-image">
-              <img src="assets/img/skills/nmap-logo-256x256.png" alt="" />
-            </div>
-            <div class="skill-description">
-              <p class="heading text-center">Nmap</p>
-            </div>
-          </div>
-        </div> -->
       </section>
 
       <!--===== PROJECTS =====-->
@@ -411,7 +369,11 @@
                     officers featuring an AI-powered chatbot, voice mode, and
                     local language support for sustainable farming.
                   </p>
-                  <a href="#">
+                  <a
+                    href="https://github.com/whoIsOneZero"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                   </a>
                 </div>
@@ -432,8 +394,12 @@
                     Radford University College to streamline processes and
                     improve accessibility.
                   </p>
-                  <a href="#"
-                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  <a
+                    href="https://github.com/whoIsOneZero"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
                   ></a>
                 </div>
               </div>
@@ -453,8 +419,12 @@
                     technology to track attendance effectively, reducing
                     absenteeism in educational settings.
                   </p>
-                  <a href="#"
-                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  <a
+                    href="https://github.com/whoIsOneZero"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
                   ></a>
                 </div>
               </div>
@@ -505,7 +475,16 @@
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-      <p class="footer__copy">&#169; Shallom Ezekiel. All rights reserved.</p>
+      <p class="footer__copy">
+        &#169; Built by Shallom Ezekiel, designed by
+        <a
+          href="https://www.youtube.com/@Bedimcode"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bemicode</a
+        >
+      </p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
@@ -515,5 +494,36 @@
     <script src="assets/js/main.js"></script>
 
     <script src="assets/js/submit_contact_form.js"></script>
+
+    <!-- Floating "Back to Top" button -->
+    <button onclick="topFunction()" id="backToTopBtn" class="btn btn-primary">
+      <i class="bx bx-chevron-up"></i>
+    </button>
+
+    <!-- ===== Scripts ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+      var mybutton = document.getElementById("backToTopBtn");
+
+      //user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      };
+
+      // user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
