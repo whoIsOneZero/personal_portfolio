@@ -392,7 +392,7 @@ img {
 }
 
 .projects-item__layer a {
-  color: #f37221;
+  color: #000000;
   font-size: 18px;
   text-decoration: none;
   line-height: 60px;
@@ -407,7 +407,7 @@ img {
 }
 
 .projects-item__layer a:hover {
-  background-color: #f37221;
+  background-color: #21c9f3;
   color: white;
 }
 
@@ -417,7 +417,7 @@ img {
 
 .projects-item:hover .projects-item__layer {
   height: 100%;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 /* ===== CONTACT =====*/
