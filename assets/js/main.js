@@ -64,5 +64,7 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skill-image", {
   delay: 400,
 });
 sr.reveal(".home__social-icon", { interval: 200 });
-// sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
-sr.reveal(".skills__data, .work-item__img, .contact__input", { interval: 200 });
+// sr.reveal(".skills__data, .projects__img, .contact__input", { interval: 200 });
+sr.reveal(".skills__data, .projects-item__img, .contact__input", {
+  interval: 200,
+});
